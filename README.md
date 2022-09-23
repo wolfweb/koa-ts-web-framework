@@ -6,7 +6,7 @@ koa + typescript web framework [中文文档](/README_CN.md)
 * typescript >= 4.7.4
 * node>= 17.1.0
 
-### how to run
+### How to run
 
 * git clone this repository
 * npm install
@@ -16,6 +16,7 @@ koa + typescript web framework [中文文档](/README_CN.md)
 ### how to use
 * add controller in ./src/controllers
 * add controller's exports in ./srcc/controllers/index.ts
-### add controller method rules
+
+### Add controller method rules
 * the controller should implement IController
 * the controller's method name should start with get/put/post/delete，this framework will auto inject get/put/post/delete methods，and the route path will use **controller.path + method.Name**(trim get/put/post/delete), if the method has no @Route decorator, else will use @Route’s value directly
